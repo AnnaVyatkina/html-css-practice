@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background-color: rgb(235, 188, 183);
+}
+
+h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.box {
+    width: 700px;
+    height: 400px;
+    background-color: rgb(36, 1, 1);
+    margin: 0 auto;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+
+}
+
+h1 span {
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.shadow-4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: #dfdfdf;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 2px #dfdfdf,
+        -2px 5px 1px #b8b8b8,
+        -4px 8px 0px #979797,
+        -6px 11px 0px #747474,
+        -8px 14px 0px #565656,
+        -10px 17px 0px #343434,
+        -12px 20px 0px #171717,
+        -14px 23px 0px #000;
+}
+
+.shadow-1 {
+    text-align: center;
+    margin-top: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;
+}
+
+.shadow-2 {
+    font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 7px white, 
+      0 10px 1px red;
+}
+
+.shadow-3 {
+    text-align: center;
+    font-size: 40px;
+    color: #67875d;
+text-shadow: 0 2px 1px #79a06d, 
+      -1px 3px 1px #82ad75, 
+      -2px 5px 1px #8ebf80;
+}
