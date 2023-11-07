@@ -1,0 +1,46 @@
+body {
+    background-image: url("background.jpg");
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    width: 800px;
+}
+h1 {
+    margin-left: 200px;
+}
+.table {
+    
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 0px;
+    
+
+}
+td, th {
+    border: 1px solid rgb(255, 255, 255); 
+    padding: 10px;
+}
+caption {
+    caption-side: bottom;
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+.form {
+    width: 200px;
+    }
+fieldset {
+    margin-bottom: 5px;
+}
+textarea {
+    margin-top: 5px;
+}
+button {
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: gold;
+    border: 5px solid gold;
+    color: white;
+}

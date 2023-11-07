@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<h>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</h ead>
+
+<body>
+    <h1>Тестовый сайт</h1>
+    <main>
+        <table class="table">
+            <caption>
+                Таблица фреймворков
+            </caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Skills</th>
+                    <th>Stars</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>React</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Angular</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Vue</td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td colspan="2">
+                        <img src="https://placehold.co/200x100" alt="image" />
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Well done!</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="form">
+            <form action="https://google.com" method="get" target="_blank">
+                <fieldset>
+                    <legend>Обязательные поля</legend>
+                    <label for="firstNameID">Имя</label>
+                    <input type="text" name="firstName" id="firstNameID" placeholder="Введите Имя" required>
+                    <label for="lastNameID">Фамилия</label>
+                    <input type="text" name="lastName" id="lastNameID" placeholder="Введите фамилию" required>
+                    <label for="emailID">Email</label>
+                    <input type="email" name="email" id="emailID" placeholder="Введите email" required>
+                </fieldset>
+                <label for="questionID">Сообщение</label>
+                <textarea name="question" id="questionID" cols="25" rows="5" placeholder="Введите ваш вопрос"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
