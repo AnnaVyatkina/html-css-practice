@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    align-content: center;
+    display: grid;
+    height: 100%;
+    justify-content: center;
+}
+
+.loading {
+    background-color: #eaff00;
+    border-radius: 50%;
+    height: 300px;
+    position: relative;
+    width: 300px;
+    animation: grow 1s ease-in-out alternate infinite;
+}
+
+@keyframes grow {
+    0% {
+        height: 15px;
+        width: 15px;
+    }
+
+    100% {
+        height: 300px;
+        width: 300px;
+    }
+}
