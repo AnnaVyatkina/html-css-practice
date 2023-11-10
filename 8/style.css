@@ -1,0 +1,39 @@
+:root {
+  --first-color: rgb(0, 0, 0);
+  --second-color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: rgb(27, 8, 43);
+  display: flex;
+  gap: 20px;
+}
+
+
+.demo {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 5rem;
+}
+
+.demo1 {
+  background: linear-gradient(var(--first-color), var(--second-color));
+}
+
+.demo2 {
+  background: linear-gradient(var(--first-color) 50%, var(--second-color) 50%);
+}
+
+.demo2-2 {
+  background: linear-gradient(var(--first-color) 50%, var(--second-color) 50%);
+  background-size: 5rem 1rem;
+}
+
+.demo3 {
+  background: linear-gradient(45deg, var(--first-color) 50%, var(--second-color) 50%);
+}
+
+.demo4 {
+  background: linear-gradient(45deg, var(--first-color) 25%, var(--second-color) 25%, var(--second-color) 50%, var(--first-color) 50%, var(--first-color) 75%, var(--second-color) 75%, var(--second-color) 100%);
+  background-size: 2.5rem 2.5rem;
+}
