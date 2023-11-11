@@ -1,0 +1,64 @@
+:root {
+    --flow-space: 0.9rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.dashboard {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    margin: 3em auto;
+    padding: 1em;
+    background: #E8E8E8;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+button {
+    font-weight: 600;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 100px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: #f2c6de;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0%/.075), 0 2px 2px hsl(0deg 0% 0%/.075), 0 4px 4px hsl(0deg 0% 0%/.075), 0 8px 8px hsl(0deg 0% 0%/.075), 0 16px 16px hsl(0deg 0% 0%/.075);
+}
+
+p {
+    background: #f2c6de;
+    font-weight: 600;
+    position: absolute;
+    top: 230px;
+    left: 75px;
+    width: 350px;
+    height: 240px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0%/.075), 0 2px 2px hsl(0deg 0% 0%/.075), 0 4px 4px hsl(0deg 0% 0%/.075), 0 8px 8px hsl(0deg 0% 0%/.075), 0 16px 16px hsl(0deg 0% 0%/.075);
+
+}
