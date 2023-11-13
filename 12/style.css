@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(180, 226, 255);
+  }
+  .image-container {
+    width: 900px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    background-color: white;
+  }
+  .img1,
+  .img4 {
+    width: 300px;
+    height: 445px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .image2-3 img {
+    width: 300px;
+    height: 220px;
+  }
