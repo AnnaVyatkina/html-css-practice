@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="button" onclick="animateEmoji()">Love</button>
+      <div class="emoji"></div>
+      <div class="shoutout"></div>
+    </div>
+    <script>
+      const emoji = document.querySelector(".emoji");
+      const shoutout = document.querySelector(".shoutout");
+      const surpiseEmojis = [
+        "💖",
+        "🤍",
+        "💌",
+        "🥰",
+        "😍",
+        "💞",
+        "😻",
+        "😘",
+        "🤗",
+        "💗",
+      ];
+      function animateEmoji() {
+        let i = Math.floor(Math.random() * surpiseEmojis.length);
+        emoji.textContent = surpiseEmojis[i];
+        emoji.style.fontSize = "50vw";
+        setTimeout(() => {
+          emoji.style.fontSize = "0";
+        }, 300);
+      }
+    </script>
+  </body>
+</html>
