@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+:root {
+    --bg-color: var(--bg-LIGHTSIDE);
+    --fore-color: var(--fore-LIGHTSIDE);
+
+    --bg-LIGHTSIDE: rgb(186, 219, 247);
+    --bg-DARKSIDE: #411109;
+    --fore-LIGHTSIDE: #f5f3ce;
+    --fore-DARKSIDE: rgb(0, 14, 19);
+}
+
+* {
+    box-sizing: border-box;
+    transition: background-color 1s, color 1s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Indie Flower';
+}
+
+h1 {
+    text-align: center;
+    color: var(--fore-color);
+    margin: 0 auto;
+    font-size: 2em;
+    transition: opacity 1s, font-size 1s, padding 1s;
+}
+
+.nav-bar {
+    background-color: var(--fore-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    border-radius: 2.5em;
+    width: 15vw;
+    height: 4vw;
+}
+
+.nav {
+    flex: 1;
+    padding: 10px 10px;
+    color: var(--bg-color);
+    font-size: 1.3em;
+    transition: opacity 1s, font-size 1s, padding 1s;
+}
+
+.h {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.sel {
+    font-size: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 1s, font-size 1s, padding 1s;
+}
