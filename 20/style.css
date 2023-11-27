@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: #07182a;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.cards {
+    position: relative;
+    width: 25%;
+    height: 80%;
+    border: 5px solid #000000;
+    border-radius: 7px;
+    background-color: #D0C9C0;
+    box-shadow: 0px 0 50px 10px #5b5b54;
+    /* transform: rotateY(0); */
+    rotate: y 0;
+    transition: rotate 2s;
+    transform-style: preserve-3d;
+}
+
+.cards:hover {
+    /* transform: rotateY(180deg); */
+    rotate: y 180deg;
+    transition: rotate 1.5s;
+    cursor: pointer;
+}
+
+.cards:hover .card {
+    filter: contrast(130%);
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: filter .5s;
+}
+
+.front--card--first {
+    background: url('picture1.jpg') no-repeat center/cover;
+}
+
+.back--card--first {
+    /* transform: rotateY(180deg); */
+    rotate: y 180deg;
+    background: url('picture2.jpg') no-repeat center/cover;
+}
+
+.front--card--second {
+    background: url('picture3.jpg') no-repeat center/cover;
+}
+.back--card--second {
+    rotate: y 180deg;
+    background: url('picture4.jpg') no-repeat center/cover;
+}
