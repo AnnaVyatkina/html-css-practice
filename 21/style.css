@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(63, 63, 63);
+  }
+  div {
+    height: 20vh;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .box1 {
+    width: 100%;
+    background-image: url("pattern1.jpg");
+  }
+  .box2 {
+    background-image: url("pattern2.jpg");
+    width: calc(100% - min(500px, 300px));
+  }
+  .box3 {
+    background-image: url("pattern3.jpg");
+    width: min(650px, 50vw);
+  }
+  .box4 {
+    background-image: url("pattern4.jpg");
+    width: max(350px, 30vw);
+  }
+  .box5 {
+    background-image: url("pattern5.jpg");
+    width: clamp(560px, 50vw, 500px);
+  }
