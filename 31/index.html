@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      svg {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .line1 {
+        animation: move 3s 0s infinite;
+      }
+      .line2 {
+        animation: move 3s 0.25s infinite;
+      }
+      .line3 {
+        animation: move 3s 0.5s infinite;
+      }
+      .line4 {
+        animation: move 3s 0.75s infinite;
+      }
+      .line5 {
+        animation: move 3s 1s infinite;
+      }
+
+      .svg-group {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      polygon {
+        animation: fadein 3s infinite;
+      }
+
+      circle {
+        animation: move2 3s infinite;
+      }
+
+      @keyframes move {
+        0%,
+        100% {
+          translate: 0;
+        }
+        50% {
+          translate: 0 20px;
+        }
+      }
+
+      @keyframes fadein {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes move2 {
+        0% {
+            translate: 0;
+        }
+
+        25% {
+            translate: 50px 0;
+        }
+
+        50% {
+            translate: 50px 50px;
+        }
+
+        75% {
+            translate: 0 50px;
+        }
+        100% {
+            translate: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="100" height="300" viewBox="0 0 300 300">
+      <line
+        x1="0"
+        y1="30"
+        x2="300"
+        y2="30"
+        stroke="#8c1c13"
+        stroke-width="5"
+        class="line1"
+      />
+      <line
+        x1="0"
+        y1="50"
+        x2="300"
+        y2="50"
+        stroke="#bf4342"
+        stroke-width="5"
+        class="line2"
+      />
+      <line
+        x1="0"
+        y1="70"
+        x2="300"
+        y2="70"
+        stroke="#e7d7c1"
+        stroke-width="5"
+        class="line3"
+      />
+      <line
+        x1="0"
+        y1="90"
+        x2="300"
+        y2="90"
+        stroke="#a78a7f"
+        stroke-width="5"
+        class="line4"
+      />
+      <line
+        x1="0"
+        y1="110"
+        x2="300"
+        y2="110"
+        stroke="#735751"
+        stroke-width="5"
+        class="line5"
+      />
+    </svg>
+    <div class="svg-group">
+    <svg width="200" height="210"  viewBox="0 0 200 210">
+      <polygon
+        points="200,0 250,180 160,180"
+        stroke="#0a0908"
+        stroke-width="5"
+        fill="#22333b"
+        class="polygon"
+      />
+    </svg>
+    <svg height="200" width="200">
+        <circle cx="50" cy="50" r="40" stroke="#eae0d5" stroke-width="3" fill="#c6ac8f" class="circle" /> 
+      </svg>
+      <svg width="300" height="210">
+        <path d="M150 0 L75 200 L225 200 L300 100 Z" stroke="#a78a7f" stroke-width="5" fill="#eae0d5" />
+        </svg>
+    </div>
+  </body>
+</html>
